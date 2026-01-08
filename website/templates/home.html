@@ -1,1 +1,20 @@
-{% extends "base.html" %} {% block title%}Home{% endblock %}
+{% extends "base.html" %} {% block title%}Changed{% endblock %}
+
+{% block content %}
+  <div class="login-container">
+    <h1>Login</h1>
+    <div id="input-container">
+      <h>Email</h>
+      <input type="email" placeholder="Email" id="email" required>
+    </div>
+    <div id="input-container">
+      <h>Password</h>
+      <input type="password" placeholder="Password" id="password" required>
+    </div>
+    <button id="create-account">Login</button>
+    <div>
+      <h>Dont have an account?</h>
+      <a id="register" href="sign_up.html">Sign Up</a>
+    </div>
+  </div>
+{% endblock %}
