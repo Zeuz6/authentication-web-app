@@ -11,7 +11,7 @@ body{
   display: flex;
   justify-content: center; 
   align-items: center;     
-  height: 800px; 
+  height: 900px; 
 }
 
 .login-container{
@@ -20,8 +20,8 @@ body{
   justify-content: flex-start;
   align-items: center;
   width: 325px;
-  height: 500px;
-  padding-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   text-align: justify;
 
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -35,7 +35,7 @@ body{
   display: flex;
   flex-direction: column;
 }
-#email, #password, #name{
+.form-control{
   border-radius: 5px;
   border: none;
   height: 40px;
@@ -49,11 +49,11 @@ body{
   border:1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
-#email::placeholder, #password::placeholder, #name::placeholder{
+.form-control::placeholder{
   color: white;
   opacity: 1;
 }
-#email, #password{
+.form-control{
   color: white;
   font-size: 15px;
 }
@@ -74,6 +74,7 @@ h1{
   font-weight: bold;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   margin-bottom: 20px;
+  cursor: pointer;
 }
 #register{
   color: white;

@@ -1,7 +1,58 @@
 {% extends "base.html" %} {% block title%}Sign Up{% endblock %}
 
 {% block content %}
-  <h1>
-    This is the sign up page
-  </h1>
+   <form method="center">
+    <div class="login-container">
+      <h1>Sign Up</h1>
+      <div id="input-container">
+        <h>Email</h>
+        <input 
+          type="email" 
+          class="form-control"
+          id="email" 
+          name="email"
+          placeholder="Enter Email" 
+          required
+        >
+      </div>
+      <div id="input-container">
+        <h>Name</h>
+        <input 
+          type="text" 
+          class="form-control"
+          id="name" 
+          name="name"
+          placeholder="Enter Name" 
+          required
+        >
+      </div>
+      <div id="input-container">
+        <h>Password</h>
+        <input 
+          type="password" 
+          class="form-control"
+          id="password1" 
+          name="password1"
+          placeholder="Enter Password" 
+          required
+        >
+      </div>
+      <div id="input-container">
+        <h>Confirm Password</h>
+        <input 
+          type="password" 
+          class="form-control"
+          id="password2" 
+          name="password2"
+          placeholder="Confirm Password" 
+          required
+        >
+      </div>
+      <button id="create-account">Sign Up</button>
+      <div>
+        <h>Dont have an account?</h>
+        <a id="register" href="/sign_up">Sign Up</a>
+      </div>
+    </div>
+  </form>
 {% endblock %}
