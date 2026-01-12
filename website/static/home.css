@@ -11,7 +11,7 @@ body{
   display: flex;
   justify-content: center; 
   align-items: center;     
-  height: 900px; 
+  height: 58rem;
 }
 
 .login-container{
@@ -23,6 +23,7 @@ body{
   padding-top: 20px;
   padding-bottom: 40px;
   text-align: justify;
+  margin-top: 5rem;
 
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
@@ -99,4 +100,31 @@ h1{
 .navbar a {
   color: white;
   margin-right: 1rem;
+}
+.alert, .green{
+  position: fixed;
+  top: 66px;
+  left: 0;
+  right: 0;
+  background-color: rgb(197, 65, 65);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.green {
+  background-color: rgb(144, 189, 102);
+}
+.alert-message{
+  font-weight: bold;
+}
+.close{
+  font-weight: bold;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.cross{
+  font-size: 2rem;
+  color: rgb(124, 124, 124);
 }

@@ -1,54 +1,50 @@
 {% extends "base.html" %} {% block title%}Sign Up{% endblock %}
 
 {% block content %}
-   <form method="center">
+   <form method="POST">
     <div class="login-container">
       <h1>Sign Up</h1>
       <div id="input-container">
-        <h>Email</h>
+        <h for="email">Email</h>
         <input 
           type="email" 
           class="form-control"
           id="email" 
           name="email"
           placeholder="Enter Email" 
-          required
         >
       </div>
       <div id="input-container">
-        <h>Name</h>
-        <input 
-          type="text" 
+        <h for="firstName">First Name</h>
+        <input
+          type="text"
           class="form-control"
-          id="name" 
-          name="name"
-          placeholder="Enter Name" 
-          required
-        >
+          id="firstName"
+          name="firstName"
+          placeholder="Enter first name"
+        />
       </div>
       <div id="input-container">
-        <h>Password</h>
+        <h for="password1">Password</h>
         <input 
           type="password" 
           class="form-control"
           id="password1" 
           name="password1"
           placeholder="Enter Password" 
-          required
         >
       </div>
       <div id="input-container">
-        <h>Confirm Password</h>
+        <h for="password2">Confirm Password</h>
         <input 
           type="password" 
           class="form-control"
           id="password2" 
           name="password2"
           placeholder="Confirm Password" 
-          required
         >
       </div>
-      <button id="create-account">Sign Up</button>
+      <button type="submit" id="create-account">Sign Up</button>
       <div>
         <h>Dont have an account?</h>
         <a id="register" href="/sign_up">Sign Up</a>
