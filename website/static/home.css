@@ -128,3 +128,18 @@ h1{
   font-size: 2rem;
   color: rgb(124, 124, 124);
 }
+.remove{
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.list-group-item{
+  display: flex;
+  justify-content: space-between;
+}
