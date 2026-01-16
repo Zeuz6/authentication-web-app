@@ -38,29 +38,6 @@ This project demonstrates backend authentication logic, database modeling, and s
 
 ---
 
-## 📂 Project Structure
-
-authentication-web-app/
-│
-├── website/
-│ ├── init.py # App factory & DB setup
-│ ├── auth.py # Authentication routes
-│ ├── views.py # Protected app routes
-│ ├── models.py # User & Note models
-│
-├── templates/
-│ ├── login.html
-│ ├── sign_up.html
-│ ├── home.html
-│ └── base.html
-│
-├── database.db # SQLite database
-├── main.py # App entry point
-└── README.md
-
-
----
-
 ## 🔐 Authentication Flow
 
 1. Users sign up with email, name, and password
